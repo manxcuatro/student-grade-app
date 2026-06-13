@@ -1,5 +1,8 @@
 def add_students(students, name, grade):
-    pass
+    students.append({
+        "name": name,
+        "grade": grade
+    })
 
 def show_students(students):
     pass
@@ -9,3 +12,4 @@ def find_student(students, name):
 
 def average_grade(students):
     pass
+
