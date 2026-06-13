@@ -1,5 +1,8 @@
 def add_students(students, name, grade):
-    pass
+    students.append({
+        "name": name,
+        "grade": grade
+    })
 
 def show_students(students):
     if len(students) ==0:
@@ -16,4 +19,9 @@ def find_student(students, name):
         return None
 
 def average_grade(students):
-    pass
+    if len(students) == 0:
+        return 0
+    
+    total = sum(s["grade"] for s in students)
+    return total / len(students)
+
