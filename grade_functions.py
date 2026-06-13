@@ -11,5 +11,9 @@ def find_student(students, name):
     pass
 
 def average_grade(students):
-    pass
+    if len(students) == 0:
+        return 0
+    
+    total = sum(s["grade"] for s in students)
+    return total / len(students)
 
